@@ -59,7 +59,8 @@ class ServerConnection {
         const protocol = location.protocol.startsWith('https') ? 'wss' : 'ws';
         const webrtc = window.isRtcSupported ? '/webrtc' : '/fallback';
         const url = protocol + '://' + location.host + location.pathname + 'server' + webrtc;
-        return 'ws://192.168.0.113:3000/server/webrtc';
+        // return 'ws://192.168.0.113:3000/server/webrtc';
+        return url
     }
 
     _disconnect() {
