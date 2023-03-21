@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <!-- Web App Config -->
-    <title>FileShip - Peer-to-Peer File Transfer</title>
+    <title>FileShip - Peer-to-Peer File Transfer Over Wifi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#3367d6">
     <meta name="color-scheme" content="dark light">
@@ -56,7 +56,7 @@
 <body translate="no">
     <div>
         <header class="row-reverse">
-            <a href="#about" class="icon-button" title="About FileShip>
+            <a href="#about" class="icon-button" title="About FileShip">
                 <svg class="icon">
                     <use xlink:href="#info-outline" />
                 </svg>
@@ -80,7 +80,7 @@
         <!-- Peers -->
         <x-peers class="center"></x-peers>
         <x-no-peers>
-            <h2>Open FileShip on other devices to send files</h2>
+            <snap style="font-size: 24px; font-weight: 400; letter-spacing: -.012em; line-height: 32px; color: var(--primary-color);">Open FileShip on other devices to send files</snap>
         </x-no-peers>
         <x-instructions desktop="Click to send files or right click to send a message" mobile="Tap to send files or long tap to send a message"></x-instructions>
         <!-- Footer -->
@@ -95,7 +95,7 @@
         <x-dialog id="receiveDialog">
             <x-background class="full center">
                 <x-paper shadow="2">
-                    <h3>File Received</h3>
+                    <p style="font-size: 20px; font-weight: 500; margin: 16px 0;">File Received</p>
                     <div class="font-subheading" id="fileName">Filename</div>
                     <div class="font-body2" id="fileSize"></div>
                     <div class='preview' style="visibility: hidden;">
@@ -117,7 +117,7 @@
             <form action="#">
                 <x-background class="full center">
                     <x-paper shadow="2">
-                        <h3>Send a Message</h3>
+                        <p style="font-size: 20px; font-weight: 500; margin: 16px 0;">Send a Message</p>
                         <div id="textInput" class="textarea" role="textbox" placeholder="Send a message" autocomplete="off" autofocus contenteditable></div>
                         <div class="row-reverse">
                             <button class="button" type="submit" close>Send</button>
@@ -131,7 +131,7 @@
         <x-dialog id="receiveTextDialog">
             <x-background class="full center">
                 <x-paper shadow="2">
-                    <h3>Message Received</h3>
+                    <p style="font-size: 20px; font-weight: 500; margin: 16px 0;">Message Received</p>
                     <div class="font-subheading" id="text"></div>
                     <div class="row-reverse">
                         <button class="button" id="copy" close autofocus>Copy</button>
@@ -157,15 +157,13 @@
                 <svg class="icon logo">
                     <use xlink:href="#wifi-tethering" />
                 </svg>
-                <h1>FileShip</h1>
-                <div class="font-subheading">The easiest way to transfer files across devices</div>
                 <div class="row">
-                    <a class="icon-button" target="_blank" href="https://github.com/RobinLinus/snapdrop" title="Snapdrop on Github" rel="noreferrer">
+                    <a class="icon-button" target="_blank" href="https://github.com/f4yis/fileship" title="FileShip on Github" rel="noreferrer">
                         <svg class="icon">
                             <use xlink:href="#github" />
                         </svg>
                     </a>
-                    <a class="icon-button" target="_blank" href="https://www.paypal.com/donate?hosted_button_id=FTP9DXUR7LA7Q" title="Help cover the server costs!" rel="noreferrer">
+                    <!-- <a class="icon-button" target="_blank" href="https://www.paypal.com/donate?hosted_button_id=FTP9DXUR7LA7Q" title="Help cover the server costs!" rel="noreferrer">
                         <svg class="icon">
                             <use xlink:href="#monetarization" />
                         </svg>
@@ -179,7 +177,7 @@
                         <svg class="icon">
                             <use xlink:href="#help-outline" />
                         </svg>
-                    </a>
+                    </a> -->
                 </div>
             </section>
             <x-background></x-background>
